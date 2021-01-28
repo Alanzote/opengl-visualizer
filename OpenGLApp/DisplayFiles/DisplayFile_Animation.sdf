@@ -1,0 +1,26 @@
+scene() {
+	frames(600)
+}
+
+cube(solid, 5) {
+	rotate(0, Frame/Frames * 360, 0)
+
+	cube(wireframe, 10) {
+		scale(0.5 + Frame/TargetFPS % 1,
+			  0.5 + Frame/TargetFPS % 1,
+			  0.5 + Frame/TargetFPS % 1)
+		rotate(0, Frame/TargetFPS * 360, 0)
+	}
+	
+	cube(wireframe, 10) {
+		scale(0.5 + Frame/TargetFPS % 1,
+			  0.5 + Frame/TargetFPS % 1,
+			  0.5 + Frame/TargetFPS % 1)
+		rotate(0, Frame/TargetFPS * -3600, 0)
+	}
+	
+	cone(wireframe, 2.5, 5, 10, 10) {
+		translate(0, 2.5, 0)
+		rotate(-90, 0, Frame/TargetFPS * -720)
+	}
+}

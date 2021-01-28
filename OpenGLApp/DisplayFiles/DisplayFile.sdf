@@ -1,0 +1,273 @@
+offseter() {
+	scale(5, 5, 5)
+
+	table() {
+		color(0.64, 0.16, 0.16)
+		
+		cube(solid, 1) {
+			scale(10, 0.2, 5)
+		}
+		
+		feet() {
+			scale(0.5, 5, 0.5)
+		
+			cube(solid, 1) {
+				translate(9.4, -0.5, 4.4)
+			}
+			
+			cube(solid, 1) {
+				translate(9.4, -0.5, -4.4)
+			}
+			
+			cube(solid, 1) {
+				translate(-9.4, -0.5, 4.4)
+			}
+			
+			cube(solid, 1) {
+				translate(-9.4, -0.5, -4.4)
+			}
+		}
+	}
+	
+	pixar() {
+		translate(0, 0.4, 0)
+
+		sphere(solid, 0.3, 10, 10) {
+			color(0, 1, 1)
+		}
+
+		lamp() {
+			translate(0, 0.3, 0)
+			color(1, 1, 1)
+			rotate(20, 0, 0)
+			
+			core() {
+				rotate(-90, 0, 0)
+			
+				cylinder(solid, 0.4, 0.1, 10, 10) {}
+				cylinder(solid, 0.1, 0.2, 10, 10) {}
+				
+				base() {
+					rotate(-50, 0, 0)
+					translate(0, -0.1, 0.35)
+					scale(0.2, 2, 0.7)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(40, 0, 0)
+					translate(0, 0.15, 0.35)
+					scale(0.2, 2, 0.5)
+				
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+				
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(40, 0, 0)
+					translate(0, 0, 0.63)
+					scale(0.2, 2, 0.5)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-55, 0, 0)
+					translate(0, 0.22, 0.6)
+					scale(0.2, 2, 0.5)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-20, 0, 0)
+					translate(0, 0.3, 0.85)
+					scale(0.2, 2, 0.2)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(70, 0, 0)
+					translate(0, 0.38, 0.65)
+					scale(0.2, 2, 0.5)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-85, 0, 0)
+					translate(0, 0.1, 1)
+					scale(0.2, 3, 0.3)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-80, 0, 0)
+					translate(0, 0.4, 1.07)
+					scale(0.2, 2.5, 0.3)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-60, 0, 0)
+					translate(0, 0.31, 1.4)
+					scale(0.2, 1, 0.5)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(40, 0, 0)
+					translate(0, 0.17, 1.37)
+					scale(0.2, 1.5, 0.5)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				base() {
+					rotate(-30, 0, 0)
+					translate(0, 0.2, 1.53)
+					scale(0.2, 1.5, 0.3)
+					
+					cube(solid, 0.2) {
+						translate(0.2, 0, 0)
+					}
+					
+					cube(solid, 0.2) {
+						translate(-0.2, 0, 0)
+					}
+				}
+				
+				cylinder(solid, 0.05, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0, 0.2)
+				}
+				
+				cylinder(solid, 0.05, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, -0.2, 0.45)
+				}
+				
+				cylinder(solid, 0.05, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.1, 0.7)
+				}
+				
+				cylinder(solid, 0.05, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.3, 0.5)
+				}
+				
+				cylinder(solid, 0.04, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.45, 0.8)
+				}
+				
+				cylinder(solid, 0.04, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.12, 0.9)
+				}
+				
+				cylinder(solid, 0.04, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.1, 1.3)
+				}
+				
+				cylinder(solid, 0.04, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.3, 1.4)
+				}
+				
+				cylinder(solid, 0.04, 0.05, 10, 10) {
+					rotate(0, -90, 0)
+					translate(0.02, 0.35, 1.3)
+				}
+				
+				head() {
+					rotate(100, 0, 0)
+					translate(0, 0.17, 1.8)
+					scale(1, 1, 1)
+					
+					cylinder(solid, 0.2, 0.3, 10, 10) {}
+					
+					cylinder(solid, 0.15, 0.2, 10, 10) {
+						translate(0, 0, -0.2)
+					}
+					
+					cylinder(solid, 0.25, 0.2, 10, 10) {
+						translate(0, 0, 0.2)
+					}
+					
+					sphere(solid, 0.2, 10, 10) {
+						color(2, 2, 2)
+						translate(0, 0, 0.3)
+					}
+				}
+			}
+		}
+	
+	}
+}
